@@ -14,7 +14,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-public class dvf extends JFrame{
+public class currencyconverter extends JFrame{
 	private JPanel inputPanel;
     private JPanel resultPanel;
     private JPanel menuPanel;
@@ -32,7 +32,7 @@ public class dvf extends JFrame{
     String from;
     String to;
 
-    public dvf()                       
+    public currencyconverter()                       
     {
         super();
         this.setSize(500, 200);                         
@@ -233,7 +233,7 @@ public class dvf extends JFrame{
     }
 
     public static void main(String[] args){
-        dvf CurCon = new dvf();
+        currencyconverter CurCon = new currencyconverter();
         CurCon.setVisible(true);}
     private static double sendHttpGETRequest(String fromCode,String toCode,int amount) throws IOException {
             String GET_URL="https://v6.exchangerate-api.com/v6/4bd38c887102af556a78a49a/pair/"+toCode+"/"+fromCode+"/"+amount; 
